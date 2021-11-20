@@ -37,7 +37,12 @@ class CardUser extends StatelessWidget {
             children: <Widget>[
               TextButton(
                 child: const Text('Edit'),
-                onPressed: () {/* ... */},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Profile(true)),
+                  );
+                },
               ),
               const SizedBox(width: 8),
               Mutation(
